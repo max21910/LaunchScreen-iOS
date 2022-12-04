@@ -16,9 +16,9 @@ yes this project is open source
 ## Image :
 ![This is an image](img/Vid1.gif)
 
-![This is an image](img/Vid2.png)
-Support White mode: 
-![This is an image](img/1.png)
-and dark mode :
+![This is an image](img/Vid2.gif)
+## Support White mode: 
 ![This is an image](img/2.png)
+## and dark mode :
+![This is an image](img/1.png)
 
