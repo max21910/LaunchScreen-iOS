@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C6B9BFF2A002FD00002FBD9 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 9C6B9BFE2A002FD00002FBD9 /* AlertToast */; };
 		9C8303CC284FB8010064B1D5 /* LaunchScreenXcodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8303CB284FB8010064B1D5 /* LaunchScreenXcodeApp.swift */; };
 		9C8303CE284FB8010064B1D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8303CD284FB8010064B1D5 /* ContentView.swift */; };
 		9C8303D0284FB8050064B1D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C8303CF284FB8050064B1D5 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6B9BFF2A002FD00002FBD9 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = LaunchScreenXcode;
+			packageProductDependencies = (
+				9C6B9BFE2A002FD00002FBD9 /* AlertToast */,
+			);
 			productName = LaunchScreenXcode;
 			productReference = 9C8303C8284FB8010064B1D5 /* LaunchScreenXcode.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 9C8303BF284FB8010064B1D5;
+			packageReferences = (
+				9C6B9BFD2A002FD00002FBD9 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = 9C8303C9284FB8010064B1D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -403,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -595,6 +603,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C6B9BFD2A002FD00002FBD9 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C6B9BFE2A002FD00002FBD9 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C6B9BFD2A002FD00002FBD9 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9C8303C0284FB8010064B1D5 /* Project object */;
 }

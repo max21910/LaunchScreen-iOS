@@ -1,35 +1,37 @@
 
-//© 2022 Max21910
+//  © 2022 Max21910
 //  Prelaunch.swift
 //  LaunchScreen
 //  Created by Maxime DJ on 30/07/2021.
 //
+
 import SwiftUI
 
 struct Prelaunch: View {
     
-    @State private var animationisfinish = false //animation is not end
+    @State private var animationisfinish = false
     @State private var angle: Double = 360
     @State private var opacity : Double = 1
     @State private var scale : CGFloat = 1
     
     var body: some View {
         Group {
-            if animationisfinish == true { //if the animation is end we show the ContentView
+            if animationisfinish == true {
                 
-                ContentView()
+                ContentView() //view after the animation is completed
                 
             } else { //else we start the animation
                 
                 
                 ZStack {
-                    
-                    Image("Blue") //change the background image in the Assets Folder
+                    //set a background color here if you whant
+                 /*  Image("Blue")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .ignoresSafeArea()
+                  */
                     
-                    Image("Icon")//you can add your own icone in the asset folder
+                    Image("bigIcon")//you can add your own icone in the asset folder
                         .resizable()
                         .frame(width: 200, height: 200)
                         .rotation3DEffect(
@@ -49,7 +51,7 @@ struct Prelaunch: View {
                 opacity = 0
             }
             withAnimation(.linear.delay(1.75)) {
-                animationisfinish = true 
+                animationisfinish = true
             }
         }
     }
